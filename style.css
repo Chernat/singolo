@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    height: 90px;
+    background-color: #2d303a;
+    border-bottom: 5px solid #323746;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a > span {
+    position: relative;
+    color: #f06c64;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+ul > li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+ul li .active {
+    color: #f06c64;
+}
+
+ul > li a:hover {
+    color: #f06c64;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dot::after {
+    content: '.';
+    position: absolute;
+    color: #494e62;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bg-red {
+    background-color: #f06c64;
+}
+
+.slider {
+    background-image: url('./slide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f06c64;
+    height: calc(100vh - 90px);
+}
